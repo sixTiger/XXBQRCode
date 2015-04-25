@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0944B5DE1AEB48D9009D7D2D /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0944B5DD1AEB48D9009D7D2D /* libzbar.a */; };
 		0980E5901ACD38D40027E9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E58F1ACD38D40027E9BE /* main.m */; };
 		0980E5931ACD38D40027E9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5921ACD38D40027E9BE /* AppDelegate.m */; };
 		0980E5961ACD38D40027E9BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5951ACD38D40027E9BE /* ViewController.m */; };
@@ -22,7 +23,6 @@
 		0980E5E71ACD38F80027E9BE /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5D61ACD38F80027E9BE /* qrspec.c */; };
 		0980E5E81ACD38F80027E9BE /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5D81ACD38F80027E9BE /* rscode.c */; };
 		0980E5E91ACD38F80027E9BE /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5DA1ACD38F80027E9BE /* split.c */; };
-		0980E5EA1ACD38F80027E9BE /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0980E5DC1ACD38F80027E9BE /* libzbar.a */; };
 		0980E5EB1ACD38F80027E9BE /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5DE1ACD38F80027E9BE /* zbar-back.png */; };
 		0980E5EC1ACD38F80027E9BE /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5DF1ACD38F80027E9BE /* zbar-help.html */; };
 		0980E5ED1ACD38F80027E9BE /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5E01ACD38F80027E9BE /* zbar-helpicons.png */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0944B5DD1AEB48D9009D7D2D /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
 		0980E58A1ACD38D40027E9BE /* 二维码扫描.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "二维码扫描.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0980E58E1ACD38D40027E9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0980E58F1ACD38D40027E9BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		0980E5D91ACD38F80027E9BE /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
 		0980E5DA1ACD38F80027E9BE /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
 		0980E5DB1ACD38F80027E9BE /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
-		0980E5DC1ACD38F80027E9BE /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
 		0980E5DE1ACD38F80027E9BE /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
 		0980E5DF1ACD38F80027E9BE /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		0980E5E01ACD38F80027E9BE /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0944B5DE1AEB48D9009D7D2D /* libzbar.a in Frameworks */,
 				0980E5F01ACD3AFE0027E9BE /* libiconv.2.4.0.dylib in Frameworks */,
-				0980E5EA1ACD38F80027E9BE /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,9 +187,9 @@
 		0980E5B31ACD38F80027E9BE /* ZBarSDK */ = {
 			isa = PBXGroup;
 			children = (
+				0944B5DD1AEB48D9009D7D2D /* libzbar.a */,
 				0980E5B41ACD38F80027E9BE /* Headers */,
 				0980E5CB1ACD38F80027E9BE /* libqrencode */,
-				0980E5DC1ACD38F80027E9BE /* libzbar.a */,
 				0980E5DD1ACD38F80027E9BE /* Resources */,
 			);
 			path = ZBarSDK;
@@ -588,6 +588,7 @@
 				0980E5AF1ACD38D40027E9BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0980E5B01ACD38D40027E9BE /* Build configuration list for PBXNativeTarget "二维码扫描Tests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +597,7 @@
 				0980E5B21ACD38D40027E9BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
