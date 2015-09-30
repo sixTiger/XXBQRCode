@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0944B5DE1AEB48D9009D7D2D /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0944B5DD1AEB48D9009D7D2D /* libzbar.a */; };
 		0980E5901ACD38D40027E9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E58F1ACD38D40027E9BE /* main.m */; };
 		0980E5931ACD38D40027E9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5921ACD38D40027E9BE /* AppDelegate.m */; };
 		0980E5961ACD38D40027E9BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5951ACD38D40027E9BE /* ViewController.m */; };
@@ -27,8 +26,9 @@
 		0980E5EC1ACD38F80027E9BE /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5DF1ACD38F80027E9BE /* zbar-help.html */; };
 		0980E5ED1ACD38F80027E9BE /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5E01ACD38F80027E9BE /* zbar-helpicons.png */; };
 		0980E5EE1ACD38F80027E9BE /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980E5E11ACD38F80027E9BE /* zbar-samples.png */; };
-		0980E5F01ACD3AFE0027E9BE /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0980E5EF1ACD3AFE0027E9BE /* libiconv.2.4.0.dylib */; };
 		0980E5F31ACD3C370027E9BE /* XXBQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980E5F21ACD3C370027E9BE /* XXBQRCodeVC.m */; };
+		62E92E3D1B9694E800ED307D /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E92E3C1B9694E800ED307D /* libiconv.2.dylib */; };
+		62E92E3E1B96958900ED307D /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0944B5DD1AEB48D9009D7D2D /* libzbar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +96,9 @@
 		0980E5DF1ACD38F80027E9BE /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		0980E5E01ACD38F80027E9BE /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		0980E5E11ACD38F80027E9BE /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
-		0980E5EF1ACD3AFE0027E9BE /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
 		0980E5F11ACD3C370027E9BE /* XXBQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBQRCodeVC.h; sourceTree = "<group>"; };
 		0980E5F21ACD3C370027E9BE /* XXBQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBQRCodeVC.m; sourceTree = "<group>"; };
+		62E92E3C1B9694E800ED307D /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0944B5DE1AEB48D9009D7D2D /* libzbar.a in Frameworks */,
-				0980E5F01ACD3AFE0027E9BE /* libiconv.2.4.0.dylib in Frameworks */,
+				62E92E3E1B96958900ED307D /* libzbar.a in Frameworks */,
+				62E92E3D1B9694E800ED307D /* libiconv.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 		0980E5811ACD38D40027E9BE = {
 			isa = PBXGroup;
 			children = (
-				0980E5EF1ACD3AFE0027E9BE /* libiconv.2.4.0.dylib */,
+				62E92E3C1B9694E800ED307D /* libiconv.2.dylib */,
 				0980E58C1ACD38D40027E9BE /* 二维码扫描 */,
 				0980E5A61ACD38D40027E9BE /* 二维码扫描Tests */,
 				0980E58B1ACD38D40027E9BE /* Products */,
